@@ -1,7 +1,7 @@
 <h1><%= @post.title %></h1>
 <p> <%= @post.content %> </p>
 
-<p> Categories: <%= @post.categories.map{ |cat| cat.name }.join(',') %> </p>
+<p> Categories: <%= @post.categories.map{ |cat| cat.name }.join(', ') %> </p>
 
 <ul>
 <% @post.comments.each do |comment| %>
